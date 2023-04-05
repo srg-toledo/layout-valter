@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- colocando o favicon na página 
+        href="caminho da imagem"-->
+    <link rel="shortcut icon" href="favicon/android-chrome-192x192.png" type="image/x-icon">
+    <title>Testes - Sérgio</title>
+</head>
+<body>
+    <!-- texto no site -->
+    <p><h3>Colocando imagem no site</h3></p>
+
+    <!-- COLOCANDO IMAGEM NO SITE 
+        src="serve para colocar o caminho da imagem, local ou por link"
+        alt="serve para quando a imagem nao carregar no site, um texto sera exibido"-->
+    <img src="icon/z_linkedin.png" alt="LinkedIn">
+
+    
+    <!-- Capítulo 8 Guanabara  = Semântica -->
+    <h1>H1 - Tags com Semântica</h1>
+    <h2>H2 - Introdução</h2>
+    <h3>H3 - Negrito</h3>
+    <P>Use a TAG (<em>strong</em>) para colocar o <strong>Texto em Negrito</strong> </P>
+    <h3>H3 - Itálico</h3>
+    <p>Use a TAG (<em>em</em>) para colocar o <em>Texto em Itálico</em></p>
+    <h3>Texto Marcado</h3>
+    <p>Use a TAG (<em>mark</em>) para deixar um <mark>texto marcado</mark></p>
+    <h3>Texto Pequeno</h3>
+    <p>Use a TAG (<em>small</em>) para deixar o <small>texto pequeno</small></p>
+    <h3>Texto Deletado / Riscado</h3>
+    <p>Use a TAG (<em>del</em>) para deixar o <del>texto riscado</del></p>
+    <h3>Texto sublinhado</h3>
+    <p>Use a TAG (<em>ins</em>) para deixar o <ins>texto sublinhado</ins></p>
+    <h3>Texto SOBREScrito</h3>
+    <p>Use a TAG (<em>sup</em>) para deixar o texto <sup>acima</sup></p>
+    <h3>Texto SUBScrito</h3>
+    <p>Use a TAG (<em>sub</em>) para deixar o texto <sub>abaixo</sub></p>
+    <h3>Código-Fonte / Pré-Formatação</h3>
+    <p>Use a TAG (<em>code</em>) para deixar o <code>texto formatado</code></p>
+    <p>Use a TAG (<em>pre</em>) para deixar o <code>texto formatado</code> com quebra de linhas e indentação, abaixo está um exemplo </p>
+    <pre>
+        <code>
+cont = 1
+if cont > 2:
+print(f'O valor do contador é {cont}')
+        </code>
+    </pre>
+    <h3>Citações Simples</h3>
+    <p>Use a TAG (<em>q</em>) para o <q>texto ficar com aspas</q></p>
+    <h3>Abreviações</h3>
+    <!-- a tag (abbr) ótimo para ranquear o site no google = SEO -->
+    <p>Use a TAG (<em>abbr</em>) para o texto postrar um pequeno popup EX: <abbr title="Hyper Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h3>Texto Invertido</h3>
+    <!-- bdo dir="rtl" / bdo dir="ltr" -->
+    <p>Use a TAG (<em>bdo</em>) para deixar o <bdo dir="rtl">texto Invertido</bdo></p>
+
+    <!-- Capítulo 9 LISTAS -->
+    <h3>Listas Ordenadas</h3>
+    <p>Use a TAG (<em>ol</em>) ex:</p>
+    <!-- use type dentro de <ol type=""> para definir o formato da ordem
+        "1", "A", "a", "I", "i"
+        use <type="" start=""> start define de onde deve começar
+     -->
+    <ol type="a" start="5"><!-- começando a lista apartir da 5ª letra do alfabeto-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h3>Listas não Ordenadas</h3>
+    <p>Use a TAG (<em>ul</em>) ex:</p>
+     <!-- use type dentro de <ul type=""> para definir o formato da ordem
+        "square", "circle", "disc" -->
+    <ul type="disc">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <h3>Juntando listas</h3>
+    <p>Colocando uma lista dentro da outra</p>
+    <!-- lista ordenada -->
+    <ul type="disc">
+        <li>item 1</li>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <li>item 2</li>
+        <!-- lista não ordenada -->
+        <ul type="square">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <li>item 3</li>
+    </ul>
+
+    <!-- Capítulo 10 = lINKS -->
+    <h3>Usando Links Externos</h3>
+    <!-- acessa o link, mas fecha a pagina que você está -->
+    <p>Use a TAG (<em>a</em>) ex: Acesse meu <a href="https://github.com/srg-toledo"> GitHub</a> acessa na mesma guia do navegador</p>
+    <!-- acessa o link, mas abre uma nova guia no navegador -->
+    <p>Use a TAG (<em>a</em>) ex: Acesse meu <a href="https://github.com/srg-toledo" target="_blank" rel="external"> GitHub</a> abre uma nova guia no navegador</p>
+
+    <h3>Links Internos</h3>
+    <p>Crie um segundo arquivo .hml e use a TAG (<em>a</em>) para direcionar o link da página 2</p>
+    <!-- rel="next" =  página -->
+    <p>Ir para a <a href="pagina02/testes02.html" rel="next"> 2 página</a></p>
+
+    <h3>Link para Download</h3>
+    <!-- acesse: https://www.iana.org/assignments/media-types/media-types.xhtml
+        para ver o type do arquivo que você quer baixar -->
+    <ul>
+        <li><a href="icon/z_linkedin.png" download="z_linkedin.png" type="image/png">Download 1</a></li>
+        <li><a href="icon/z_linkedin.rar" download="z_linkedin.rar" type="appication/vnd.rar">Download 2</a></li>
+    </ul>
+
+
+    <!-- Capítulo 11  -->
+    <h3>Imagem Dinâmica</h3>
+    <p>Use a TAG (<em>picture</em>) dentro dessa TAG use (<em>source:media:type</em>)</p>
+    <picture>
+        <!-- se a resolução da tela for menor que 750px entao troca a imagem -->
+        <source media="(max-width: 750px)" srcset="img/imagem-p.png" type="image/png">
+        
+        <!-- se a resolução da tela for menor que 1050px entao troca a imagem -->
+        <source media="(max-width: 1050px)" srcset="img/imagem-m.png" type="image/png">
+        
+        <!-- resolução máxima -->
+        <img src="img/imagem-g.png" alt="Imagem Flexível">
+    </picture>
+    
+    
+    <h3>Reprodução de Áudio</h3>
+    <p>Use a TAG (<em>picture</em>) dentro dessa TAG use (<em>source:src</em>)</p>
+    
+    <!-- preload="metadata" = carrega as info do audio
+        controls = mostra os controles para dar play na música-->
+        <audio preload="metadata" controls><!-- opç: auto, metadata, none-->
+            <source src="audio/on-the-rocks-tracktribe.mp3" type="audio/mpeg">
+            <source src="audio/on-the-rocks-tracktribe.ogg" type="audio/ogg">
+            <source src="audio/on-the-rocks-tracktribe.wav" type="audio/wav">
+            <!-- caso nao carrege nenhuma das opções acima, vai mostrar na tela do texto abaixo -->
+            <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        </audio>
+        
+        <h3>Reprodução de Vídeo Hospedados Localmente</h3>
+        <p>Use a TAG (<em>video</em>) dentro dessa TAG use (<em>source:src</em>)</p>
+        <video width="500" poster="img/imagem-m.png" controls>
+            <source src="video/Pexels-Evgenia-Kirpichnikova-2795691-3840X2160-25Fps.mp4" type="video/mp4">
+            <p>Infelizmente seu navegador não consegue reproduzir vídeo.</p>
+    </video>
+
+</body>
+</html>
