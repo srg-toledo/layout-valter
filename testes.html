@@ -53,7 +53,7 @@ print(f'O valor do contador é {cont}')
     <p>Use a TAG (<em>q</em>) para o <q>texto ficar com aspas</q></p>
     <h3>Abreviações</h3>
     <!-- a tag (abbr) ótimo para ranquear o site no google = SEO -->
-    <p>Use a TAG (<em>abbr</em>) para o texto postrar um pequeno popup EX: <abbr title="Hyper Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <p>Use a TAG (<em>abbr</em>) para o texto mostrar um pequeno popup EX: <abbr title="Hyper Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
     <h3>Texto Invertido</h3>
     <!-- bdo dir="rtl" / bdo dir="ltr" -->
     <p>Use a TAG (<em>bdo</em>) para deixar o <bdo dir="rtl">texto Invertido</bdo></p>
@@ -149,12 +149,19 @@ print(f'O valor do contador é {cont}')
             <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
         </audio>
         
-        <h3>Reprodução de Vídeo Hospedados Localmente</h3>
-        <p>Use a TAG (<em>video</em>) dentro dessa TAG use (<em>source:src</em>)</p>
+    <h3>Reprodução de Vídeo Hospedados Localmente</h3>
+    <p>Use a TAG (<em>video</em>) dentro dessa TAG use (<em>source:src</em>)</p>
         <video width="500" poster="img/imagem-m.png" controls>
             <source src="video/Pexels-Evgenia-Kirpichnikova-2795691-3840X2160-25Fps.mp4" type="video/mp4">
             <p>Infelizmente seu navegador não consegue reproduzir vídeo.</p>
-    </video>
+        </video>
+    <p>Vídeo hospedado no YouTube</p>
+    <!-- Link externo do botao de compartilhamento no youtube 
+        podemos usar a plataforma VIMEO para videos privados, mas precisamos de um plano PAGO para consumir o serviço-->
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/TCeyIwFGkYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Vídeo hospedado no VIMEO</p>
+    <iframe src="https://player.vimeo.com/video/397673759?h=a91c129b75&title=0&byline=0&portrait=0&badge=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
 
 </body>
 </html>

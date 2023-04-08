@@ -1,41 +1,128 @@
-*
+@charset "UTF-8";
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    class = .
+    id = #
+
+*/
+body{
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.linksmenu{
+    color: white;
+    text-decoration: none;
+}
+
+.Logo{
+    /*0px de cima / baixo | 100px = lado direito / esquerdo */
+    margin: 10px 200px;
+    /* margin-top: 10px;
+    align-items: center; */
+}
+
+.menutopo{
+    /* largura */
+    width: 100%;
+    /* altura */
+    height: 50px;
+}
+
+#listamenu {
+    
+    /* top: 0;
+    left: 0; */
+    /* removendo os símbolos das listas*/
+    list-style: none;
+    /* lista um do lado do outro */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 450px;
+}
+
+
+.coluna{
+    /* espaços entre os menus */
+    padding: 0px 20px;
+}
+
+header{
+    /* margin-right: 50px; */
+    background-color: #02416b;
+}
+
+main{
+    
+    margin: 0px 200px;
+    
+}
+
+#creditos{
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: #091540;
+    color: #b1b1b1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 5;
+}
+
+  
 footer
 {
     width: 100%;
     min-height: 250px;
-    background: #444;
+    background: #02416b;
     display: flex;
 }
 footer .boxs
 {
-    width: 320px;
-    min-height: 150px;
-    padding: 20px;
+    max-width: 500px;
+    margin: 0px -70px;
+    padding: 0 10px;
+    position: relative;
+    left: 80px;
+    
 }
 
-footer .boxs:nth-child(1)
+footer .boxs:nth-child(10)
 {
-    width: 300px;
+    width: 10px;
 }
+
 .boxs h2
 {
     color: #fff;
     margin-bottom: 20px;
+    padding-left: 180px;
 }
 
 .boxs ul li
 {
-    margin: 10px 0px;
+    margin: 10px 40px;
+    padding-left: 100px;
     list-style: none;
+    color: white;
 }
 
 .boxs ul li a
 {
+    align-items: center;
     color: #ddd;
     text-decoration: none;
 }
 
+
+
+/* Muda a cor do texto após passar o mouse */
 .boxs ul li a:hover
 {
     color: #fff;
@@ -50,6 +137,35 @@ footer .boxs:nth-child(1)
 {
     color: #fff;
     text-align: justify;
+}
+
+/* main{
+    top: 50%;
+    left: 50%;
+} */
+.boxs a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #C62E65;
+    color: white;
+    margin: 0 6px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+.boxs a:hover{
+    background: #091540;
+}
+
+.boxs a i{
+    transition: 00.4s all;
+}
+.boxs a:hover > i{
+    transform: scale(1.6) rotate(25deg);
 }
 
 /*  */
